@@ -1,0 +1,24 @@
+{
+  "name": "a04-hunter-kouchi",
+  "version": "1.0.0",
+  "description": "Testing out an API",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js --port=555"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-fall/a04-Hunter-Kouchi.git"
+  },
+  "author": "Hunter-Kouchi",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-fall/a04-Hunter-Kouchi/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-fall/a04-Hunter-Kouchi#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "minimist": "^1.2.7"
+  }
+}
