@@ -1,14 +1,16 @@
-#!/usr/bin/env node
-
-import { roll } from './lib/roll.js'
-import express from "express"
+import express from "express";
 import minimist from "minimist"
+import { roll } from "./lib/roll.js"
 
 const app = express();
+app.use(express.urlencoded({extended: true}))
 const args = minimist(process.argv.slice(2));
 
-const port = args.port || 5000;
-app.use(express.urlencoded({extended: tre}));
+let port = 5000;
+
+if ("port" in args) {
+	port = args.port;
+}
 
 app.get('/app/', (req, res) => {
 	res.send('200 OK');
@@ -49,4 +51,3 @@ app.use(function(req, res) {
 
 
 app.listen(port);
-
